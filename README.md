@@ -23,3 +23,18 @@ This repo aims to solve technical challenge for Flugel.
 * I want a cluster of 2 EC2 instances behind an ALB running Nginx, serving a static file. This static file must be generated at boot, using a Python script. Put the AWS instance tags in the file.
 * The cluster must be deployed in a new VPC. This VPC must have only public subnets. Do not use default VPC
 * Update the tests to validate the infrastructure. The test must check that files are reachable in the ALB.
+
+## Docs
+### How to run terraform
+
+- [example](./terraform/example/README.md)
+
+### How to run terratest
+
+Go cli must be installed before running tests. Refer to [this page](https://go.dev/doc/install) to install it.
+
+Then you can run this commands to check if all test are passed.
+
+```
+go test ./test/...
+```
